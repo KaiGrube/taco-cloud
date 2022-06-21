@@ -17,7 +17,7 @@ import com.example.tacocloud.Ingredient.Type;
 @Slf4j
 @Controller
 @RequestMapping("/design")
-public class DesignTacoController {
+public class DesignController {
     private List<Ingredient> filterByType(List<Ingredient> ingredients, Type type) {
         return ingredients.stream()
                 .filter(x -> x.getType().equals(type))
